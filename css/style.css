@@ -28,6 +28,14 @@ ul, li{
 p{
   margin: .2em 0 1.8em 0;
 }
+a{
+  color: #99cc33;
+  text-decoration: none;
+  outline: none;
+}
+a:hover, a:focus {
+  color: #373e18;
+}
 
 
 
@@ -42,11 +50,13 @@ p{
 /* no nav here - this is just a container for the little usses to run around in */
 header{
   width: 100%;
-  height: 290px;
+  height: 180px;
   display: block;
   position: relative;
   margin: 0;
   padding: 0;
+  text-align: center;
+  padding-top: 110px;
 }
 /* the torches are added to the header */
 .torch{
@@ -78,6 +88,7 @@ header{
   display: inline-block;
   width: 30%;
   margin: 5px 2%;
+  vertical-align: top;
   /*background: #F60;*/
 }
 .student .column:first-child{
@@ -87,139 +98,59 @@ header{
   margin-right: 0;
 }
 
-
-
 /* display the student names on one line - later these will be the sprites */
 #students li {
   display:inline;
 }
-
 .social-icon {
   width: 90px;
 }
 
-/* flame effect */
-.testanimation{
-  -webkit-transition-duration: 5000ms;
-  -webkit-transition-property: -webkit-transform;
-  -webkit-transform: translate(-320px, 0px);
-  animation: newanimation 1s;
+/* the portfolio items with rollover */
+#details-projects .column{
+  /* width 265 */
+  height: 198px;
+  position: relative;
+  overflow: hidden;
+  background: #FFF;
 }
-keyframes testanimation{
-  0% {color: red;}
-  50% {color: blue;}
-  100& {color: green;}
+#details-projects a span{
+  /* width 265 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  padding: 5px;
 }
-
-
-
-.fire{
-  -webkit-animation: FLAMES 1s infinite;
-  -moz-animation: FLAMES 1s infinite;
-  -o-animation: FLAMES 1s infinite;
-  animation: FLAMES 1s infinite;
+#details-projects a img{
+  width: 265px;
+  height: 198px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: all 1s ease;
 }
-
-.burn {
-  animation: FLAMES .65s infinite alternate;
-  -moz-animation: FLAMES .65s infinite alternate;
-  -webkit-animation: FLAMES .65s infinite alternate;
-  -o-animation: FLAMES .65s infinite alternate;
-}
-
-@keyframes FLAMES{
-  0% {background: red;}
-  100% {background: blue;}
-}
-/*0% {box-shadow: 0 0 20px #fefcc9,
-  10px -10px 30px #feec85,
-  -20px -20px 40px #ffae34,
-  20px -40px 50px #ec760c,
-  -20px -60px 60px #cd4606,
-  0 -80px 70px #973716,
-  10px -90px 80px #451b0e;}
-100% {box-shadow: 0 0 20px #fefcc9,
-  10px -10px 30px #fefcc9,
-  -20px -20px 40px #feec85,
-  22px -42px 60px #ffae34,
-  -22px -58px 50px #ec760c,
-  0 -82px 80px #cd4606,
-  10px -90px 80px  #973716;}
+#details-projects a img:hover{
+  padding-top: 100%;
 }
 
-@-moz-keyframes animation{
-0% {box-shadow: 0 0 20px #fefcc9,
-  10px -10px 30px #feec85,
-  -20px -20px 40px #ffae34,
-  20px -40px 50px #ec760c,
-  -20px -60px 60px #cd4606,
-  0 -80px 70px #973716,
-  10px -90px 80px #451b0e;}
-100% {box-shadow: 0 0 20px #fefcc9,
-  10px -10px 30px #fefcc9,
-  -20px -20px 40px #feec85,
-  22px -42px 60px #ffae34,
-  -22px -58px 50px #ec760c,
-  0 -82px 80px #cd4606,
-  10px -90px 80px  #973716;}
-}
-
-@-webkit-keyframes animation
-{
-0% {box-shadow: 0 0 20px #fefcc9,
-  10px -10px 30px #feec85,
-  -20px -20px 40px #ffae34,
-  20px -40px 50px #ec760c,
-  -20px -60px 60px #cd4606,
-  0 -80px 70px #973716,
-  10px -90px 80px #451b0e;}
-100% {box-shadow: 0 0 20px #fefcc9,
-  10px -10px 30px #fefcc9,
-  -20px -20px 40px #feec85,
-  22px -42px 60px #ffae34,
-  -22px -58px 50px #ec760c,
-  0 -82px 80px #cd4606,
-  10px -90px 80px  #973716;}
-}
-
-@-o-keyframes animation
-{
-0% {box-shadow: 0 0 20px #fefcc9,
-  10px -10px 30px #feec85,
-  -20px -20px 40px #ffae34,
-  20px -40px 50px #ec760c,
-  -20px -60px 60px #cd4606,
-  0 -80px 70px #973716,
-  10px -90px 80px #451b0e;}
-100% {box-shadow: 0 0 20px #fefcc9,
-  10px -10px 30px #fefcc9,
-  -20px -20px 40px #feec85,
-  22px -42px 60px #ffae34,
-  -22px -58px 50px #ec760c,
-  0 -82px 80px #cd4606,
-  10px -90px 80px  #973716;}
-}*/
 
 
 
 
-a {
-  color: #99cc33;
-  text-decoration: none;
-  outline: none;
-}
 
-a:hover, a:focus {
-  color: #373e18;
-}
 
-div button {
-  display: inline-block;
-  background: #a9a9a9;
+
+
+
+
+
+div button.trigger{
+  display: block;
   color: #fff;
   font-weight: 400;
-  padding: 10px 20px;
-  margin: 5px;
+  margin: 0 auto;
   text-transform: uppercase;
   border-radius: 2px;
   letter-spacing: 1px;
@@ -227,6 +158,13 @@ div button {
   padding: 15px 30px;
   outline: none;
   background: #85b91e;
+  z-index: 10000;
+}
+.trigger-close{
+  position: fixed;
+  bottom: 5px;
+  left: 50%;
+  margin-left: -30px !important;
 }
 
 section {
@@ -241,38 +179,6 @@ section p {
   padding: 20px 0;
 }
 
-.related > a {
-  border: 1px solid #99cc33;
-  display: inline-block;
-  text-align: center;
-  margin: 20px 10px;
-  padding: 25px;
-  color: #99cc33;
-  opacity: 0.8;
-  -webkit-transition: color 0.3s, border-color 0.3s;
-  transition: color 0.3s, border-color 0.3s;
-  -webkit-backface-visibility: hidden;
-}
-
-.related a:hover {
-  border-color: #82b222;
-  color: #82b222;
-}
-
-.related a img {
-  max-width: 100%;
-}
-
-.related a h3 {
-  margin: 0;
-  padding: 0.5em 0 0.3em;
-  max-width: 300px;
-  text-align: left;
-  font-size: 65%;
-  font-weight: 400;
-}
-
-
 /* Overlay style */
 .overlay {
   position: fixed;
@@ -281,90 +187,20 @@ section p {
   top: 0;
   left: 0;
   background: rgba(153,204,51,0.9);
-}
-
-/* Overlay closing cross */
-.overlay .overlay-close {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  overflow: hidden;
-  border: none;
-  background: url(../img/cross.png) no-repeat center center;
-  text-indent: 200%;
-  color: transparent;
-  outline: none;
-  z-index: 100;
-}
-
-/* overlay style */
-.overlay nav {
-  text-align: center;
-  position: relative;
-  top: 50%;
-  height: 60%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-
-/* Effects */
-.overlay-boxes {
-  background: transparent;
-  visibility: hidden;
-  -webkit-transition: visibility 0s 0.8s;
-  transition: visibility 0s 0.8s;
-}
-
-.overlay-boxes.open {
-  visibility: visible;
-  -webkit-transition: none;
-  transition: none;
-}
-
-.overlay-boxes svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.overlay-boxes svg path {
-  /*fill: rgb(153,204,51);*/
-  fill: #ff5c6f;
+  z-index: 20;
   display: none;
-}
-
-.overlay-boxes nav,
-.overlay-boxes .overlay-close {
-  opacity: 0;
-  -webkit-transition: opacity 0.5s 0.8s;
-  transition: opacity 0.5s 0.8s;
-}
-
-.overlay-boxes.open nav,
-.overlay-boxes.open .overlay-close {
-  opacity: 1;
-  -webkit-transition-delay: 0.8s;
-  transition-delay: 0.8s;
-}
-
-.overlay-boxes.close nav,
-.overlay-boxes.close .overlay-close {
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
-}
-
-@media screen and (max-height: 30.5em) {
-  .overlay nav {
-    height: 70%;
-    font-size: 34px;
-  }
+  text-align: center;
 }
 
 
+#phaser-canvas{
+  z-index: 1000;
+  max-width: 900px;
+  margin: 10px auto;
+}
 
+
+/* this style makes us all jump up and down */
 .bounce {
   -webkit-animation: bounce 1.2s ease-out;
   -moz-animation: bounce 1.2s ease-out;
@@ -373,7 +209,6 @@ section p {
 }
 
 /* Webkit, Chrome and Safari */
-
 @-webkit-keyframes bounce {
   0% {
     -webkit-transform: translateY(0%);
@@ -415,7 +250,6 @@ section p {
 
 /* Mozilla Firefox 15 below */
 @-moz-keyframes bounce {
-
   0% {
     -moz-transform: translateY(0%);
   }
@@ -496,7 +330,6 @@ section p {
 
 /* W3, Opera 12+, Firefox 16+ */
 @keyframes bounce {
-  
   0% {
     transform: translateY(0%);
   }

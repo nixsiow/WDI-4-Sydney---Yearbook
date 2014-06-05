@@ -2,13 +2,12 @@ var yearBook = yearBook || {};
 
 //seed objects for all students. Create one large object/var 
 
-
 yearBook.yearBookStudents = new yearBook.Students([
   new yearBook.Student({
     name: 'Tom',
     slug: 'tom-dane',
     photoURL: 'Tom.jpg',
-    aboutMe: 'The bite of an irradiated javascript bug granted Tom Dane fairly average powers. When a burglar killed his off-site backups, Tom vowed to use those abilities to improve the web, driven by his teacher\'s words: With some power comes some responsibility!',
+    aboutMe: 'The bite of an irradiated javascript bug granted Tom Dane the power of code. When a burglar killed his parent\'s laptop, Tom vowed to use those abilities to improve the web.',
     portfolioImage1: 'tba',
     portfolioImage2: 'tba',
     portfolioImage3: 'tba',
@@ -26,40 +25,40 @@ yearBook.yearBookStudents = new yearBook.Students([
   new yearBook.Student({
     name: 'Nix',
     slug: 'nix-siow',
-    photoURL: 'tba',
-    aboutMe: 'your bio',
-    portfolioImage1: 'tba',
-    portfolioImage2: 'tba',
-    portfolioImage3: 'tba',
-    portfolioURL1: 'tba',
-    portfolioURL2: 'tba',
-    portfolioURL3: 'tba',
-    portfolioBlurb1: 'tba',
-    portfolioBlurb2: 'tba',
-    portfolioBlurb3: 'tba',
-    github: 'https://github.com/thomasdane',
-    twitter: 'https://twitter.com/tomjdane',
-    linkedin: '',
-    email: ''
+    photoURL: 'img/nix/Nix.JPG',
+    aboutMe: 'I am a full stack web developer focusing on Javascript and Ruby on Rails. I am passionate about front end technologies such as jQuery, Backbone, CSS3 and HTML5. I am doing a pivot from my real estate business and starting my career as a web developer in Sydney. I love to code and excited to work on products that bring value to people.',
+    portfolioImage1: 'img/nix/Effy.jpg',
+    portfolioImage2: 'img/nix/Demochattic.jpg',
+    portfolioImage3: 'img/nix/MarketPlac.jpg',
+    portfolioURL1: 'https://effy.herokuapp.com/',
+    portfolioURL2: 'https://demochattic.herokuapp.com/',
+    portfolioURL3: 'https://marketplac.herokuapp.com/',
+    portfolioBlurb1: 'Manage your time with Effy.',
+    portfolioBlurb2: 'Democratic + Chat Apps = Demochattic',
+    portfolioBlurb3: 'MarketPlac, a E-Commerce site literally look good.',
+    github: 'https://github.com/nixsiow',
+    twitter: 'https://twitter.com/nixsiow',
+    linkedin: 'http://www.linkedin.com/in/nixsiow',
+    email: 'nixsiow@hotmail.com'
   }),
   new yearBook.Student({
     name: 'Kriss',
     slug: 'kriss-heimanis',
-    photoURL: 'tba',
-    aboutMe: 'your bio',
+    photoURL: 'http://m.c.lnkd.licdn.com/mpr/mpr/wc_300_300/p/4/000/166/373/039521a.jpg',
+    aboutMe: 'I\'ve always been obsessed with knowing how things work. Code let\'s me build things from the ground-up, and I get to write the rules, I love it, it\'s like a game!',
     portfolioImage1: 'tba',
     portfolioImage2: 'tba',
     portfolioImage3: 'tba',
-    portfolioURL1: 'tba',
-    portfolioURL2: 'tba',
-    portfolioURL3: 'tba',
-    portfolioBlurb1: 'tba',
-    portfolioBlurb2: 'tba',
-    portfolioBlurb3: 'tba',
-    github: 'https://github.com/thomasdane',
-    twitter: 'https://twitter.com/tomjdane',
-    linkedin: '',
-    email: ''
+    portfolioURL1: 'http://whatsat.herokuapp.com/',
+    portfolioURL2: 'http://loople.herokuapp.com/',
+    portfolioURL3: 'http://divandconquer.herokuapp.com/',
+    portfolioBlurb1: 'What\'s@ is a news app that allows you to post or search news by location - find out what\'s happening in your neighbourhood.',
+    portfolioBlurb2: 'Quickly and easily create short musical loops. Save loops so you can cue them up and create a full track!',
+    portfolioBlurb3: 'A bookmarklet-based app that allows you to play a game with elements of any page on the internet.',
+    github: 'https://github.com/citizengit',
+    twitter: 'https://twitter.com/modeltwitizen',
+    linkedin: 'http://www.linkedin.com/in/krissheimanis',
+    email: 'citizen.kriss@gmail.com'
   }),
   new yearBook.Student({
     name: 'Olly',
@@ -146,38 +145,35 @@ yearBook.yearBookStudents = new yearBook.Students([
     portfolioImage2: 'tba',
     portfolioImage3: 'tba',
     portfolioURL1: 'tba',
-    portfolioURL2: 'tba',
-    portfolioURL3: 'tba',
-    portfolioBlurb1: 'tba',
-    portfolioBlurb2: 'tba',
-    portfolioBlurb3: 'tba',
-    github: 'https://github.com/thomasdane',
-    twitter: 'https://twitter.com/tomjdane',
-    linkedin: '',
-    email: ''
+    portfolioURL2: 'http://demochattic.herokuapp.com/',
+    portfolioURL3: 'http://airtribuo.herokuapp.com/',
+    portfolioBlurb1: 'Justlike is a web based recipe search and database to allow you to access, share and update your family heirloom recipes in one place',
+    portfolioBlurb2: 'Demochattic is a web based chat client with a difference. There are no channel/room admins and all decisions only proceed after a majority vote from the users. It\'s Democrattic!',
+    portfolioBlurb3: 'Airtribuo is a web based, geolocated todo list allowing you to set, assign and be notified when you are close to any todo list locations',
+    github: 'https://github.com/markpereira',
+    twitter: 'https://twitter.com/parkmereira',
+    linkedin: 'http://www.linkedin.com/in/gmpereira',
+    email: 'mark.pereira@xtra.co.nz'
   }),
   new yearBook.Student({
     name: 'Simon',
     slug: 'simon-taylor',
     photoURL: 'tba',
-    aboutMe: 'your bio',
+    aboutMe: 'I\'m a full stack web dev who loves both the intricacies of Javascript and the elegance of Ruby on Rails. I\'m also a nerd at heart who loves Video Games, Board Games and Roleplaying games.',
     portfolioImage1: 'tba',
     portfolioImage2: 'tba',
     portfolioImage3: 'tba',
-    portfolioURL1: 'tba',
-    portfolioURL2: 'tba',
-    portfolioURL3: 'tba',
-    portfolioBlurb1: 'tba',
-    portfolioBlurb2: 'tba',
-    portfolioBlurb3: 'tba',
-    github: 'https://github.com/thomasdane',
-    twitter: 'https://twitter.com/tomjdane',
-    linkedin: '',
-    email: ''
+    portfolioURL1: 'http://txt-adv.herokuapp.com/',
+    portfolioURL2: 'http://demochattic.herokuapp.com/',
+    portfolioURL3: 'http://review-mi.herokuapp.com/',
+    portfolioBlurb1: 'Text Adventure Builder lets you create and share your own custom text based adventure games. The complex adventure editor lets you easily build your own story and bring this to life with images. Those who enjoyed "Choose your own Adventure" books will find it instantly familiar',
+    portfolioBlurb2: 'Demochattic is a web based chat client with a difference. There are no channel/room admins and all decisions only proceed after a majority vote from the users. It\'s Democrattic!',
+    portfolioBlurb3: 'Review Mi is a content review site, allowing users to rate and review content that they have read / watched or listened to. Currently only Movie reviews have been implemented.',
+    github: 'https://github.com/nizmox',
+    twitter: 'https://twitter.com/SimonTaylorAU',
+    linkedin: 'http://www.linkedin.com/in/simontaylorau',
+    email: 'simon@93made.com'
   })
-
-
-  // new yearBook.Student({id:1, title:'Tom', slug: 'tom-dane', content:'Tom content'}),
 
 ]);
 
@@ -190,8 +186,20 @@ $(document).ready(function(){
   Backbone.history.start();
 
   // we will need some dom elements, let's set variables here
-  
-
-
-
+  $('header').on('click', '.trigger-open', function(){
+    $('.trigger-open').html('close');
+    $('.trigger-open').addClass('trigger-close');
+    $('.trigger-open').removeClass('trigger-open');
+    $('.overlay').fadeIn(function (){
+      runGame();//game = new Phaser.Game(900, 600, Phaser.AUTO, 'phaser-canvas', { preload: preload, create: create, update: update });
+    });
+  });
+  $('header').on('click', '.trigger-close', function(){
+    $('.trigger-close').html('Enter the Wizard School');
+    $('.trigger-close').addClass('trigger-open');
+    $('.trigger-close').removeClass('trigger-close');
+    $('.overlay').fadeOut();
+    $('#phaser-canvas').remove();
+    $('.overlay').append('<div id="phaser-canvas"></div>');
+  })
 });
