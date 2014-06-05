@@ -104,9 +104,9 @@ yearBook.yearBookStudents = new yearBook.Students([
     slug: 'anne-homann',
     photoURL: 'img/Anne.jpg',
     aboutMe: "When I'm not tuning in to watch Australia's number one award-winning drama 'Neighbours', you'll find me coding, reading code or reading about code. Or watching more Neighbours on YouTube"
-    portfolioImage1: '',
+    portfolioImage1: 'img/relove.jpg',
     portfolioImage2: '',
-    portfolioImage3: '',
+    portfolioImage3: 'img/kollate.jpg',
     portfolioURL1: 'http://relove-me.herokuapp.com',
     portfolioURL2: 'http://loople.herokuapp.com',
     portfolioURL3: 'http://kollate.herokuapp.com',
